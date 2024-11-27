@@ -19,7 +19,7 @@ This project is an interactive 3D visualization for the **K'e-mono**, my connect
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-repo/k-e-mono-visualization.git
+   git clone https://github.com/julesgg/KemonoThreeJs.git
    ```
 2. Navigate to the project directory:
    ```bash
