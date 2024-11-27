@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeJS Example</title>
+    
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Import map pour charger Three.js et ses extensions -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+            }
+        }
+    </script>
+    
+    <!-- Styles intégrés pour le cadre de texte -->
+    <style>
+        /* Style pour le cadre contenant le texte descriptif */
+        .text-box {
+            position: absolute;
+            top: 20%; /* Position verticale */
+            left: 17%; /* Position horizontale */
+            transform: translateX(-50%); /* Centrage horizontal */
+            background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+            color: white; /* Couleur du texte */
+            font-size: 14px; /* Taille du texte */
+            padding: 15px; /* Marges internes */
+            border-radius: 8px; /* Coins arrondis */
+            width: 40%; /* Largeur relative */
+            max-width: 400px; /* Largeur maximale */
+            box-shadow: 0 0 10px rgba(2, 218, 247, 0.5); /* Effet d'ombre */
+            overflow: auto; /* Ajout d'un défilement si nécessaire */
+            z-index: 1000; /* S'assure que ce cadre est au-dessus du canvas */
+        }
+    </style>
+</head>
+<body>
+    <!-- Section descriptive : présente le projet -->
+    <div class="text-box">
+        <h1>K'e-mono is the very first connected judo kimono</h1>
+        <h3>It features a set of resistive sensors specifically designed to detect the opponent's grips and the ground position during falls.</h3>
+        <h3>Inertial Measurement Unit (IMU) sensors placed on the shoulders accurately measure the judoka's movements, providing a comprehensive analysis of their actions.</h3>
+        <em>Follow the arrows and click on the sensors to learn more!</em>
+    </div>
+    
+    <!-- Canvas utilisé par Three.js pour l'affichage 3D -->
+    <canvas id="myCanvas"></canvas>
+    
+    <!-- Script externe contenant la logique Three.js -->
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
